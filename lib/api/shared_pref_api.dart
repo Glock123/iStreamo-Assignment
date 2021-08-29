@@ -6,7 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class SharedPrefApi {
   static final Future<SharedPreferences> _pref =
       SharedPreferences.getInstance();
-  static String KEY = 'key_for_offline_storage1';
+  static String KEY = 'key_for_offline_storage2';
 
   // Object -> json (toJson)
   // json -> string (json.encode)

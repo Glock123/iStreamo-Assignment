@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
 
   Future<void> fetchData() async {
     final response = await http.get(Uri.parse(
-        'https://api.github.com/users/JakeWharton/repos?page=${cur_page}&per_page=20'));
+        'https://api.github.com/users/JakeWharton/repos?page=${cur_page}&per_page=15'));
     final decoded = await json.decode(response.body);
 
     if (decoded.length == 0) {
